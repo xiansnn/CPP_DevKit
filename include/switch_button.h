@@ -14,10 +14,43 @@
 #include "pico/stdio.h"
 #include "pico/stdlib.h"
 #include <stdio.h>
-#include "control_event.h"
 
+
+
+/// @brief the boolean meaning for GPIO_HI
 #define GPIO_HI true
+
+/// @brief the boolean meaning for GPIO_LO
 #define GPIO_LO false
+
+/**
+ * @brief The list of predefined events that a button, or more generally an User Interface Controller, can return, leaving it the responsibility
+ * to act as required by its specification.
+ */
+enum class ControlEvent
+{
+
+    /// @brief null event, no operation expected.
+    NOOP,
+    /// @brief event triggered when a button is pushed
+    PUSH,
+    /// @brief event triggered when a button is double-pushed
+    /// \todo  Not implemented. // TODO  To find a way to do "DOUBLE_PUSH"
+    DOUBLE_PUSH,
+     /// @brief event triggered when a button is held more than a configurable duration.
+    LONG_PUSH,
+    /// @brief event triggered when a button is released after a configurable duration.
+    RELEASED_AFTER_LONG_TIME,
+    /// @brief event triggered when a button is released before a configurable duration.
+    RELEASED_AFTER_SHORT_TIME,
+    /// @brief event that signals the user trig an increment order.
+    INCREMENT,
+    /// @brief event that signals the user trig an decrement order.
+    DECREMENT,
+    /// @brief event that signals nothing happens after a configurable period of time.
+    TIME_OUT
+};
+
 
 /**
  * @brief The logical state of the switch
@@ -35,9 +68,14 @@ enum class ButtonState
     TIME_OUT_PENDING
 };
 
+
+ /// @brief the default value for debounce_delay_us
 #define DEBOUNCE_us 10000             // default to 10ms
+/// @brief the default value for LONG_RELEASE_DELAY_us
 #define LONG_RELEASE_DELAY_us 1000000 // default to 1s
+/// @brief the default value for LONG_PUSH_DELAY_us
 #define LONG_PUSH_DELAY_us 1000000    // default to 1s
+/// @brief the default value for TIME_OUT_DELAY_us
 #define TIME_OUT_DELAY_us 5000000     // default top 5s
 
 /**

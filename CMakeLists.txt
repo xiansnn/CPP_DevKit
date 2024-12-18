@@ -30,6 +30,17 @@ include(pico_sdk_import.cmake)
 
 project(cpp_devkit C CXX ASM)
 
+# Find Doxygen 
+find_package(Doxygen) 
+if(DOXYGEN_FOUND) # Set input and output files 
+    set(DOXYGEN_CNF ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile_cnf) 
+    add_custom_target(doc_doxygen 
+    COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_CNF}        
+        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+        COMMENT "Generating API documentation with Doxygen" VERBATIM) 
+endif()
+
+
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
