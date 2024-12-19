@@ -9,6 +9,7 @@
  *
  */
 #include "switch_button.h"
+#include "control_event.h"
 #include "probe.h"
 #include <map>
 #include <string>

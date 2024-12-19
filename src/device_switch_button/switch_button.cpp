@@ -9,6 +9,7 @@
  *
  */
 #include "switch_button.h"
+#include "control_event.h"
 #include "hardware/gpio.h"
 #include "hardware/timer.h"
 
