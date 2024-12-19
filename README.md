@@ -8,7 +8,7 @@ Up to now, only one display device is available. It is the OLED SSD1306. Most of
 ## Complete documentation (still in construction)
 Access to the the project web page with external browser [here](https://xiansnn.github.io/CPP_DevKit/).
 
-After opening this pages with your web browser, you will find doxygen documentation [here](docs/index.html)
+After opening this pages with your web browser, you will find doxygen documentation [here](docs/html/index.html)
 
 
 ## Motivation
