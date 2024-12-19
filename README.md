@@ -1,4 +1,4 @@
-# MyRP2_CPP_UI
+# C++ DevKit
 This repository proposes a User Interface alternative version for RPi Pico.
 All de classes are developped within Rasspberry Pi Pico VSCode extension. 
 they must rebuilt according to the used SDK version et pico platform. 
