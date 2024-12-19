@@ -1,2 +1,3 @@
 add_subdirectory(utilities_debug_probe)
 add_subdirectory(device_switch_button)
+add_subdirectory(hardware_i2c)
