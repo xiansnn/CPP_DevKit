@@ -99,40 +99,43 @@ $(function(){initNavTree('control__event_8h_source.html',''); initResizable(true
   <div class="headertitle"><div class="title">control_event.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#if !defined(CONTROL_EVENT_H)</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CONTROL_EVENT_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// enum class ControlEvent</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// {</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//     /// @brief null event, no operation expected.</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//     NOOP,</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//     /// @brief event triggered when a button is pushed</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//     PUSH,</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//     /// @brief event triggered when a button is double-pushed</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//     /// \todo  Not implemented. // TODO  To find a way to do &quot;DOUBLE_PUSH&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//     DOUBLE_PUSH,</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//      /// @brief event triggered when a button is held more than a configurable duration.</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//     LONG_PUSH,</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//     /// @brief event triggered when a button is released after a configurable duration.</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//     RELEASED_AFTER_LONG_TIME,</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//     /// @brief event triggered when a button is released before a configurable duration.</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//     RELEASED_AFTER_SHORT_TIME,</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//     /// @brief event that signals the user trig an increment order.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//     INCREMENT,</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//     /// @brief event that signals the user trig an decrement order.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//     DECREMENT,</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//     /// @brief event that signals nothing happens after a configurable period of time.</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//     TIME_OUT</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// };</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">// CONTROL_EVENT_H</span></div>
+<a href="control__event_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#if !defined(CONTROL_EVENT_H)</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define CONTROL_EVENT_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4">   18</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4">ControlEvent</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_enumvalue" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a722d122e81cbbe543bd5520bb8678c0e">NOOP</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_enumvalue" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a73dabe4437725eedc05a1824a2c31550">PUSH</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_enumvalue" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a7f9117be5ae4af6fadbf2c87f360c120">DOUBLE_PUSH</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_enumvalue" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a66d354703a5722b875b56431d89fb646">LONG_PUSH</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_enumvalue" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4af7e84b3c12997ec227d0c17657261c84">RELEASED_AFTER_LONG_TIME</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_enumvalue" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4ad384edb3d3d3cb51350c9b2a1451ea90">RELEASED_AFTER_SHORT_TIME</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_enumvalue" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a90cf1f5206b348a822cc1a453a587534">INCREMENT</a>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_enumvalue" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4ac0ffa6e46086551bc5113d1238faf106">DECREMENT</a>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_enumvalue" href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4aa52c72b25366cc2977dc7c505cf06a98">TIME_OUT</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif </span><span class="comment">// CONTROL_EVENT_H</span></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4">ControlEvent</a></div><div class="ttdeci">ControlEvent</div><div class="ttdoc">The list of predefined events that a button, or more generally an User Interface Controller,...</div><div class="ttdef"><b>Definition</b> control_event.h:19</div></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4a66d354703a5722b875b56431d89fb646"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a66d354703a5722b875b56431d89fb646">ControlEvent::LONG_PUSH</a></div><div class="ttdeci">@ LONG_PUSH</div><div class="ttdoc">event triggered when a button is held more than a configurable duration.</div></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4a722d122e81cbbe543bd5520bb8678c0e"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a722d122e81cbbe543bd5520bb8678c0e">ControlEvent::NOOP</a></div><div class="ttdeci">@ NOOP</div><div class="ttdoc">null event, no operation expected.</div></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4a73dabe4437725eedc05a1824a2c31550"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a73dabe4437725eedc05a1824a2c31550">ControlEvent::PUSH</a></div><div class="ttdeci">@ PUSH</div><div class="ttdoc">event triggered when a button is pushed</div></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4a7f9117be5ae4af6fadbf2c87f360c120"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a7f9117be5ae4af6fadbf2c87f360c120">ControlEvent::DOUBLE_PUSH</a></div><div class="ttdeci">@ DOUBLE_PUSH</div><div class="ttdoc">event triggered when a button is double-pushed</div></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4a90cf1f5206b348a822cc1a453a587534"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4a90cf1f5206b348a822cc1a453a587534">ControlEvent::INCREMENT</a></div><div class="ttdeci">@ INCREMENT</div><div class="ttdoc">event that signals the user trig an increment order.</div></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4aa52c72b25366cc2977dc7c505cf06a98"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4aa52c72b25366cc2977dc7c505cf06a98">ControlEvent::TIME_OUT</a></div><div class="ttdeci">@ TIME_OUT</div><div class="ttdoc">event that signals nothing happens after a configurable period of time.</div></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4ac0ffa6e46086551bc5113d1238faf106"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4ac0ffa6e46086551bc5113d1238faf106">ControlEvent::DECREMENT</a></div><div class="ttdeci">@ DECREMENT</div><div class="ttdoc">event that signals the user trig an decrement order.</div></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4ad384edb3d3d3cb51350c9b2a1451ea90"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4ad384edb3d3d3cb51350c9b2a1451ea90">ControlEvent::RELEASED_AFTER_SHORT_TIME</a></div><div class="ttdeci">@ RELEASED_AFTER_SHORT_TIME</div><div class="ttdoc">event triggered when a button is released before a configurable duration.</div></div>
+<div class="ttc" id="acontrol__event_8h_html_afe97f6c9e5f8fc59c735ff67fa2255b4af7e84b3c12997ec227d0c17657261c84"><div class="ttname"><a href="control__event_8h.html#afe97f6c9e5f8fc59c735ff67fa2255b4af7e84b3c12997ec227d0c17657261c84">ControlEvent::RELEASED_AFTER_LONG_TIME</a></div><div class="ttdeci">@ RELEASED_AFTER_LONG_TIME</div><div class="ttdoc">event triggered when a button is released after a configurable duration.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>control_event.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="control__event_8h.html">control_event.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
